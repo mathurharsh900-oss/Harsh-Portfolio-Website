@@ -34,16 +34,11 @@ const Projects: React.FC = () => {
   return (
     <section className="py-24 pt-32 bg-slate-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16">
-          <div>
-            <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase">Portfolio</h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-              Featured Projects
-            </p>
-          </div>
-          <a href="#" className="hidden md:flex items-center text-purple-600 font-semibold hover:text-purple-700 transition-colors">
-            View All Projects <ExternalLink size={18} className="ml-2" />
-          </a>
+        <div className="mb-16">
+          <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase">Portfolio</h2>
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+            Featured Projects
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -85,12 +80,6 @@ const Projects: React.FC = () => {
               </div>
             </motion.div>
           ))}
-        </div>
-        
-        <div className="mt-8 text-center md:hidden">
-            <a href="#" className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 transition-colors">
-                View All Projects <ExternalLink size={18} className="ml-2" />
-            </a>
         </div>
       </div>
     </section>

@@ -21,6 +21,19 @@ const ScrollToTop = () => {
   return null;
 };
 
+// Home component that aggregates all sections for the landing page
+const Home = () => (
+  <>
+    <Hero />
+    <Services />
+    <Projects />
+    <Clients />
+    <Testimonials />
+    <About />
+    <Contact />
+  </>
+);
+
 function App() {
   return (
     <BrowserRouter>
@@ -29,7 +42,7 @@ function App() {
         <Navbar />
         <div className="flex-grow">
           <Routes>
-            <Route path="/" element={<Hero />} />
+            <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/clients" element={<Clients />} />
